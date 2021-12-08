@@ -6,11 +6,11 @@
 # (Optional) Build a simple integration test
 
 setup:
-	python3 -m venv ~/.devops
+	python3 -m venv ~/.heratdhruv
 
 install:	
-	RUN pip install --upgrade pip && \
-	 pip install -r requirements.txt
+	pip install --upgrade pip && \
+	 pip install --no-cache-dir -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here
