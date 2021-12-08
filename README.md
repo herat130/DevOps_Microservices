@@ -1,4 +1,4 @@
-# Example:
+# Pipeline status:
 [![CircleCI](https://circleci.com/gh/herat130/DevOps_Microservices.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 ## Project Overview
 
