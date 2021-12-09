@@ -18,6 +18,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 lint:
+	sudo chmod +x /bin/hadolint
 	./bin/hadolint Dockerfile
 	pylint app.py
 
