@@ -18,10 +18,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 lint:
-	# sudo chmod +x ./bin/hadolint Dockerfile
-	# pylint --disable=R,C,W1203 app.py
-	echo "linting"
-	cd /bin/hadolint
-	ls
+	sudo chmod +x ./bin/hadolint Dockerfile
+	# pylint --disable=R,C,W1203 app.py	
 
 all: install lint test
