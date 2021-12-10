@@ -6,7 +6,7 @@
 # (Optional) Build a simple integration test
 
 setup:
-	python3 -m venv ~/.heratdhruv
+	python3 -m venv ~/.venv
 
 install:	
 	pip install --upgrade pip && \
@@ -19,6 +19,6 @@ test:
 
 lint:
 	# sudo chmod +x ./bin/hadolint Dockerfile
-	pylint app.py
+	pylint --disable=R,C,W1203 app.py
 
 all: install lint test
