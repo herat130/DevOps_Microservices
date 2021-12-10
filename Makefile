@@ -18,7 +18,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 lint:
-	sudo chmod +x ./bin/hadolint Dockerfile
+	# sudo chmod +x ./bin/hadolint Dockerfile
 	pylint app.py
 
 all: install lint test
