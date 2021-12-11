@@ -38,4 +38,5 @@ jobs:
           name: run lint
           command: |
             source ~/.devops/bin/activate
+            pip install pylint
             sudo make lint
